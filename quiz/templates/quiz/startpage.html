@@ -17,18 +17,15 @@
 <!--CREATE THE BODY-->
 
 <body>
-	<h1>TIME FOR A QUIZ</h1>
 
-	<h3>Made by popcornbrain!</h3>
+	<div class="header">
+		<h1>TIME FOR QUIZ</h1>
+
+	</div>
+
+	<!--<h3>Made by popcornbrain!</h3>-->
 	
-	{% for quiz in quizzes %}
-
-			<p><a href="{% url 'quiz_page' quiz.quiz_number %}">
-			{{quiz.name}}
-			</a></p>
-
-	{% endfor %}
-
+	
 	<div class="container">
 
 		<div class="row">
@@ -48,9 +45,9 @@
 			<div class="col-md-4 column">
 
 				<img class="img-circle" src="/static/female_coder_medium.jpg">
-				<h2>Know your women in tech?</h2>
+				<h2>Do you know your women in tech?</h2>
 
-		
+
 				<a class="button-lg" href="#" role="button">To Quiz</a>
 
 			</div>
@@ -59,14 +56,14 @@
 
 				<img class="img-circle" src="/static/monkey_square_medium.jpg">
 				<h2>Code Monkey wonders if you know your html?</h2>
-				<a class="button-lg" href="#FFFFFF" role="button">To Quiz</a>
+				<a class="button-lg" href="#000000" role="button">To Quiz</a>
 
 			</div>
 
 			<div class="col-md-4 column">
 
 				<img class="img-circle" src="/static/future_tech.jpg">
-				<h2>Know what the future holds within the tech industry</h2>
+				<h2>Know what the future holds within the tech industry?</h2>
 				<a class="button-lg" href="#" role="button">To Quiz</a>
 
 			</div>
@@ -74,13 +71,14 @@
 
 		</div>
 
-		<div class="row">
-			<div class="col-md-4"><p><a href="quiz.html" rel="html">Code quiz</a></p></div>
-			<div class="col-md-4 column2">
-				
-			</div>
-			<div class="col-md-4 column3"></div>
-		</div>
+		{% for quiz in quizzes %}
+
+		<p><a href="{% url 'quiz_page' quiz.quiz_number %}">
+			{{quiz.name}}
+		</a></p>
+
+		{% endfor %}
+
 	</div>
 
 
