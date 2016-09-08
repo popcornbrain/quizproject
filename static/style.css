@@ -1,7 +1,7 @@
 
 body {
 
-	background: url('../images/white-washed-grunge-patterns-10.jpg');
+	background: url('/static/pink_background.jpg');
 	background-size: cover;
 
 	font: 12pt/1.4 "Helvetica Neue", "Helvetica", serif; 
