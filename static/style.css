@@ -19,11 +19,23 @@ h1 {
 	color: #FF9999;
 	text-align: center;
 }
-h3 {
+h2 {
 	color: #FF9999;
 	text-align: center;
 }
 
+h1 {
+	color: #FFFFFF;
+	text-align: center;
+}
+.button-lg {
+	background-color: #FFFFFF;
+	border-color: #F2F2F2;
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.3333333;
+	border-radius: 6px;
+}
 
 a {
 	color: #FF3333;
