@@ -1,0 +1,35 @@
+
+body {
+
+	background: url('../images/white-washed-grunge-patterns-10.jpg');
+	background-size: cover;
+
+	font: 12pt/1.4 "Helvetica Neue", "Helvetica", serif; 
+	max-width: 600px
+	margin: 0 auto;
+}
+
+.column {
+	text-align: center;
+}
+
+
+
+h1 {
+	color: #FF9999;
+	text-align: center;
+}
+h3 {
+	color: #FF9999;
+	text-align: center;
+}
+
+
+a {
+	color: #FF3333;
+}
+
+p	{
+	border-bottom: 1px solid #FF9999
+	padding-bottom: 5px;
+}
