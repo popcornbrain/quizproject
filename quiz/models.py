@@ -8,6 +8,7 @@ class Quiz(models.Model):
     	return self.name
 
 
+
 class Question(models.Model):
     question = models.TextField()
     answer1 = models.CharField(max_length=100)
@@ -15,4 +16,7 @@ class Question(models.Model):
     answer3 = models.CharField(max_length=100)
     correct = models.PositiveIntegerField()
     quiz = models.ForeignKey(Quiz, related_name="questions")
+    def __str__(self):
+    	return self.quiz.name + " / " + self.question
+
 
