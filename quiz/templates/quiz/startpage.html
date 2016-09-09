@@ -51,14 +51,14 @@
 				<a class="button-lg" href="#" role="button">To Quiz</a>
 
 			</div>
-
+			{% for quiz in quizzes %}
 			<div class="col-md-4 column">
 
 				<img class="img-circle" src="/static/monkey_square_medium.jpg">
 				<h2>Are you a true code monkey?</h2>
 				<a href="{% url 'quiz_page' quiz.quiz_number %}" class="button-lg" href="#000000" role="button">To Quiz</a>
 
-			</div>
+			</div>{% endfor %}
 
 			<div class="col-md-4 column">
 
